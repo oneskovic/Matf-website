@@ -1,0 +1,100 @@
+.matf_navbar {
+    background-color: #a52b2a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.podaci_bar{
+    background-image:url('stable-diffusion.jpg');
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+}
+
+h1,h2,h3,h4{
+    color:#a52b2a;
+}
+
+/*Style za crvene bullete u listi*/
+.crveni_bullet {
+    list-style: none; 
+  }
+  
+.crveni_bullet li::before {
+    content: "\2022";  
+    color: #a52b2a;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.tamni_link:link {
+    color: #9d9573;
+    text-decoration: none;
+  }
+  
+.tamni_link:visited {
+    color: #9d9573;
+    text-decoration: none;
+}
+
+.tamni_link:hover {
+    color: #a52b2a;
+    text-decoration: underline;
+}
+
+.tamni_link:active {
+    color: #a52b2a;
+    text-decoration: underline;
+}
+
+.svetli_link:link {
+    color: #F1F0EA;
+    text-decoration: none;
+  }
+  
+.svetli_link:visited {
+    color: #F1F0EA;
+    text-decoration: none;
+}
+
+.svetli_link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.svetli_link:active {
+    color: white;
+    text-decoration: underline;
+}
+
+.matf_navbar_text{
+    color: white;
+}
+
+.nav-tabs .nav-item .nav-link {
+    background-color: #F1F0EA;
+    color: #9d9573;
+}
+  
+.nav-tabs .nav-item .nav-link.active {
+    color: gray;
+    background-color: white;
+}
+
+.tab-content {
+    background-color: white;
+    border: 1px solid white;
+    border-top: transparent;
+    padding: 15px;
+}
+
+.tab-content .tab-pane {
+    background-color: white;
+    color: gray;
+    min-height: 200px;
+    height: auto;
+}
