@@ -13,25 +13,27 @@
     <title>Ognjen Nešković</title>
 </head>
 <body style="background-color: #d5d0c0;">
+
     <!-- Banner za matf logo i tekst -->
     <div class="matf_navbar row align-items-center">
         <div class="col-md-10 offset-md-2">
             <img src="matf_grb.png" width="60" height="60" class="d-inline-block align-top" id="matf_grb">
 
-            <span style="font-size:2em" class="matf_navbar_text">Matematički fakultet |</span>
-            <span style="font-size:1.375em" class="matf_navbar_text">univerzitet u Beogradu</span>
+            <a href="http://www.matf.bg.ac.rs/" class="svetli_link"><span style="font-size:2em" class="matf_navbar_text">Matematički fakultet |</span>
+            <span style="font-size:1.375em" class="matf_navbar_text">univerzitet u Beogradu</span></a>
         </div>
     </div>
 
+    <!-- Banner sa slikom i podacima -->
     <div class="row podaci_bar shadow-sm">
         <div class="col-md-8 offset-md-2">
             <div class="row">
-                <div class="col-md-auto">
+                <div class="col-md-auto" onclick="window.location='index.html';" style="cursor: pointer;">
                     <img src="ognjen_neskovic_slika_150.png" height="150" width="150">
                 </div>
                 <div class="col-md-auto">
                     <div class="row">
-                        <span style="font-size:2em; font-weight: 500; color:white;">Ognjen Nešković</span>
+                        <a href="index.html" class="svetli_link"><span style="font-size:2em; font-weight: 500; color:white;">Ognjen Nešković</span></a>
                     </div>
                     <div class="row">
                         <span style="font-size:1em; color:white">Student Matematičkog i Računarskog fakulteta</span>
@@ -53,16 +55,16 @@
                             </span>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
 
+
+    <!-- Tabovi -->
     <div class="row" style="padding-top:20px;">
         <div class="col-md-8 offset-md-2">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="biografija-tab" data-bs-toggle="tab" data-bs-target="#biografija" type="button" role="tab" aria-controls="biografija" aria-selected="true">Biografija</button>
                 </li>
@@ -72,27 +74,31 @@
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="vestine-tab" data-bs-toggle="tab" data-bs-target="#vestine" type="button" role="tab" aria-controls="vestine" aria-selected="false">Veštine</button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="predmeti-tab" data-bs-toggle="tab" data-bs-target="#predmeti" type="button" role="tab" aria-controls="predmeti" aria-selected="false">Predmeti</button>
+                </li>
             </ul>
 
-            <div class="tab-content" id="myTabContent">
+            <div class="tab-content">
+                <!-- Tab Biografija -->
                 <div class="tab-pane fade show active" id="biografija" role="tabpanel" aria-labelledby="biografija-tab">
                     <div class="row">
                         <div class="col-md-8">
                             <h3>Biografija</h3>
-                            <p style="padding-left:30px">Student I godine Matematičkog i Računarskog fakulteta, smer informatika, 
+                            <p class="ms-3">Student I godine Matematičkog i Računarskog fakulteta, smer informatika, 
                                 koji se najviše bavi takmičarskim programiranjem i mašinskim učenjem. 
                                 Pored školskog gradiva samostalno uči i interesuje se za oblasti teorijskog računarstva, 
                                 algoritama i struktura podataka, ali takođe i za razne oblasti mašinskog učenja.</p>
-                            <p style="padding-left:30px">Završio je <b>Računarsku gimnaziju</b> (2018-2022) u Beogradu kao đak generacije i sa prosekom 5.00</p>
+                            <p class="ms-3">Završio je <b>Računarsku gimnaziju</b> (2018-2022) u Beogradu kao đak generacije i sa prosekom 5.00</p>
                             <h3>Aktuelno angažovanje</h3>
-                            <div style="padding-left: 30px;">
+                            <div class="ms-3">
                                 <ul class="crveni_bullet">
                                     <li>Član komisije za takmičenje učenika osnovnih škola iz informatike u organizaciji Društva matematičara Srbije</li>
                                     <li>Predavač kursa "Osnovni C#" namenjenog učenicima 7. i 8. razreda, u Računarskoj gimnaziji</li>
                                 </ul>
                             </div>
                             <h3>Iskustvo</h3>
-                            <p style="padding-left:30px">
+                            <p class="ms-3">
                                 <b style="color:#a52b2a">Iskustvo u oblasti računarstva.</b>
                                 Izradio nekoliko istraživačkih radova u okviru seminara računarstva u 
                                 Istraživačkoj stanici Petnica, implementirao više većih projekata koji su 
@@ -100,13 +106,13 @@
                                 projektovanje baza podataka, izrada aplikacija za mobilne uređaje ili 
                                 grafičkih aplikacija za desktop računare.
                             </p>
-                            <div style="padding-left: 60px;">
+                            <div class="ms-3">
                                 <ul class="crveni_bullet">
                                     <li>Projekti 2019-2020 i 2020-2021 godine na seminaru računarstva u Istraživačkoj stanici Petnica, predstavljeni na Petničkoj konferenciji radova.</li>
                                     <li>Implementacija aplikacije <a href="https://github.com/PavleSekesan/Smarket" class="tamni_link">Smarket</a> (pobednik 11. MTS App konkursa)</li>
                                 </ul>
                             </div>
-                            <p style="padding-left:30px">
+                            <p class="ms-3">
                                 <b style="color:#a52b2a">Iskustvo u oblasti predavanja i prezentovanja.</b>
                                 Kao jedan od najuspešnijih polaznika seminara računarstva imao je priliku da 2021. 
                                 godine učestvuje kao saradnik (predavač i mentor) na Letnjoj naučnoj školi u 
@@ -115,7 +121,7 @@
                                 "primena računara" u trećoj godini, predstavio je svoje rezultate i 
                                 istraživanje na studentskom seminaru Matematičkog instituta SANU.
                             </p>
-                            <div style="padding-left: 60px;">
+                            <div class="ms-3">
                                 <ul class="crveni_bullet">
                                     <li>Saradnik računarstva na Letnjoj naučnoj školi u Petnici 2021. Godine.</li>
                                     <li>Predavanje na temu "Uvod u mašinsko učenje" na studentskom seminaru Matematičkog instituta SANU.</li>
@@ -125,14 +131,18 @@
                         <div class="col-md-4">
                             <h4>Kontakt</h4>
                             <div class="ms-3 text-break">
-                                <i class="bi bi-envelope-fill pull-right"></i> <a href="mailto:mi22009@alas.matf.bg.ac.rs" class="tamni_link">mi22009 @ alas.matf.bg.ac.rs</a>
+                                <i class="bi bi-envelope-fill pull-right"></i> <a href="mailto:mi22009@alas.matf.bg.ac.rs" class="tamni_link">mi22009@alas.matf.bg.ac.rs</a>
                             </div>
                             <div class="ms-3 text-break">
                                 <i class="bi bi-envelope-fill pull-right"></i> <a href="mailto:oneskovic622rn@raf.rs" class="tamni_link">oneskovic622rn@raf.rs</a>
                             </div>
+                            <h4 class="mt-3">Ostalo</h4>
+                            <p class="ms-3"><a href="tnp.html" class="tamni_link">Stranica posvećena predmetu TNP</a></p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Tab Projekti -->
                 <div class="tab-pane fade" id="projekti" role="tabpanel" aria-labelledby="projekti-tab">
                     <h3>Nagrade</h3>
                     <div style="padding-left: 30 px;">
@@ -156,10 +166,12 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- Tab  Vestine -->
                 <div class="tab-pane fade" id="vestine" role="tabpanel" aria-labelledby="vestine-tab">
                     <div class="row">
                         <h3>Veštine na polju IKT</h3>
-                        <p style="padding-left:30px">Kao uspešan takmičar i student Matematičkog fakulteta 
+                        <p class="ms-3">Kao uspešan takmičar i student Matematičkog fakulteta 
                             poseduje široko i detaljno znanje algoritama i struktura podataka, poznaje tehnike 
                             analize i prikupljanja podataka kao i različite tehnike iz oblasti mašinskog učenja. 
                             Poznaje arhitekturu računara i teoriju računarstva, izračunljivosti i složenosti. 
@@ -200,10 +212,39 @@
 
                     <div class="row">
                         <h3>Druge Veštine</h3>
-                        <div style="padding-left: 30 px;">
-                            <ul class="crveni_bullet" style="padding-left:30px">
+                        <div class="ms-3">
+                            <ul class="crveni_bullet" class="ms-3">
                                 <li>Maternji jezik: srpski. Strani jezici: engleski (C1), francuski (osnovni nivo).</li>
                                 <li>Bio je član i učestvovao u organizaciji timova u okviru takmičenja ili projekata.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab predmeti -->
+                <div class="tab-pane fade" id="predmeti" role="tabpanel" aria-labelledby="predmeti-tab">
+                    <div class="row">
+                        <h3>Spisak predmeta</h3>
+                    </div>
+                    <div class="row ms-3">
+                        <div class="col">
+                            <h4>Prvi semestar:</h4>
+                            <ul class="crveni_bullet ms-3">
+                                <li>Diskretne strukture (M105)</li>
+                                <li>Linearna algebra i analitička geometrija (M120)</li>
+                                <li>Programiranje 1 (P100)</li>
+                                <li>Uvod u organizaciju i arhitekturu računara 1 (R120)</li>
+                                <li><a href="tnp.html" class="tamni_link">Tehničko i naučno pisanje (O45)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4>Drugi semestar:</h4>
+                            <ul class="crveni_bullet">
+                                <li>Analiza 1 (M111)</li>
+                                <li>Diskretne strukture 2 (M106)</li>
+                                <li>Programiranje 2 (P101)</li>
+                                <li>Uvod u organizaciju i arhitekturu računara 2 (R220)</li>
+                                <li>Zetetika - kritičko rasuđivanje (O44)</li>
                             </ul>
                         </div>
                     </div>
